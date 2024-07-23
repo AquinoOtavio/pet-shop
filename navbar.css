@@ -1,0 +1,305 @@
+
+
+
+.bg-header-offwhite {
+  --tw-bg-opacity: 0.5;
+  background-color: #12934b;
+}
+/*12934b*/
+/*529c9f*/
+/*f9f8d0*/
+
+/*footer{
+  background-color: #12934b;
+
+}*/
+
+.imagem-apd{
+  position: static;
+  margin-bottom: -130px;
+  margin-left: 7%;
+}
+.formulario{
+  position: static;
+  height: 100%;
+  width: 80%;
+  margin-left: 100px;
+}
+.mapa{
+  height: 100%;
+  margin-left: 7px;
+  width: 100%;
+}
+.text-custom-heading {
+  --tw-bg-opacity: 0.8;
+  color: rgb(51 50 49 / var(--tw-bg-opacity));
+}
+
+#switch{
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#switch.dark-theme {
+  color: rgb(255, 255, 255);
+}
+
+#switch.light-theme {
+  color: rgb(62, 62, 62);;
+}
+
+
+#switch.turn-red-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: red;
+}
+
+#switch.turn-yellow-hover:hover {
+  --tw-text-opacity: 0.65;
+  color: rgb(255 177 0 / var(--tw-text-opacity));
+}
+
+.bg-header-orange-light {
+  --tw-bg-opacity: 0.4;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 195 122 / var(--tw-bg-opacity));
+}
+
+.bg-header-orange-dark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 180 92 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.bg-header-orange-light:hover {
+  --tw-bg-opacity: 0.7;
+  background-color: rgb(255 171 87 / var(--tw-bg-opacity));
+  transition-duration: 0.3s;
+}
+
+.turn-white-hover {
+  color: rgb(62, 62, 62);
+}
+
+.turn-white-hover:hover {
+  color: rgb(255, 255, 255);
+  transition-duration: 0.2s;
+}
+
+.bg-color-btn {
+  background-color: rgb(255, 193, 117);
+  border: 2px white solid;
+}
+
+.bg-color-btn:hover {
+  background-color: rgb(255, 172, 70);
+  transition-duration: 0.3s;
+}
+
+.bold-500 {
+  font-weight: 500;
+}
+
+
+
+.logo-size {
+  width: 17%;
+  margin-left: 20%; 
+}
+
+/*make the icons white only for darker theme*/
+.text-white .icon {
+  filter: invert(99%) sepia(1%) saturate(200%) hue-rotate(190deg)
+    brightness(117%) contrast(100%);
+}
+
+#logo{
+  transition: 0.3s ease;
+}
+
+#logo:hover{
+  transform: scale(1.05);
+}
+
+.mission-dark{
+  color: rgb(62, 62, 62);
+  cursor: default;
+}
+
+.mission-light{
+  color: rgb(255, 255, 255);
+  cursor: default;
+}
+
+#theme-toggle{
+  cursor: pointer;
+}
+
+/* make the header sticky on scroll */
+#header {
+	top: 0;
+	transition: 0.25s;
+	width: 100%;
+	z-index: 100;
+}
+
+.add_border{
+  border-bottom: 2px solid #f9f8d0;
+  /* give a bottom shadow */
+  box-shadow:  0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.nav-hidden{
+	top: -100px;
+}
+
+#navbar{
+  height: fit-content;
+  
+}
+
+.goog-logo-link,.goog-te-gadget span,.goog-te-banner-frame,#goog-gt-tt, .goog-te-balloon-frame,div#goog-gt-{
+  display: none!important;
+}
+
+.goog-te-gadget {
+  font-size:0px !important;
+  margin-bottom: -27px;
+}
+
+.skiptranslate goog-te-gadget #text{
+  display: none!important;
+}
+
+
+/* navbar changed responsiveness so the text doesn't get too big in the navbar */
+
+@media screen and (max-width: 1190px) {
+  #navbar{
+    white-space: nowrap;
+    
+  }
+  #navbar ul {
+    font-size: 15px;
+  }
+}
+.nav-items{
+  display: flex;
+  gap: 2rem;
+  padding: 0 4rem;
+  
+}
+a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: hwb(37 38% 0%);
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a:hover {
+  color: hwb(37 38% 0%);
+  cursor: pointer;
+  
+}
+
+.nav-items div{
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition:  5s;
+  
+}
+
+.remover::after{
+  content: none;
+}
+
+.x-text :hover{
+  background-color:#f9f8d0;
+}
+
+
+
+
+/*
+.card {
+  width: 200px; 
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 2px; 
+  margin-bottom: 200px; 
+  margin-left: 23%
+  
+  
+}
+
+
+.card-image {
+  background-color: rgb(139, 50, 50);
+  width: 100%;
+  height: 130px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+*/

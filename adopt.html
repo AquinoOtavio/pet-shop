@@ -1,0 +1,306 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./reportstary.css" />
+  <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <!-- <link rel="stylesheet" href="./introSection.css"> -->
+  <!-- <link rel="stylesheet" href="./mobileView.css"> -->
+  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="/PetMe/Assets/Images/logo.jpg" />
+  <title>Apadrinhamento</title>
+</head>
+
+<body>
+
+  <header
+    class="header text-gray-400 bg-header-offwhite body-font flex flex-row items-center justify-center lg:justify-around"
+    id="header">
+    <div class="flex flex-row items-center md:flex-row md:items-center p-2" id="logo">
+
+      <a class="logo-border remover" href="index.html">
+        <img class="rounded-full logo-size" src="./Assets/Images/logo1.png" alt="logo" />
+      </a>
+
+    </div>
+
+    <nav class="">
+      <div class="hidden w-full lg:block z-2" id="navbar">
+        <ul
+          class="w-[100vw] h-1/2 top-0 right-0 p-4 lg:p-4 mt-12 lg:mt-0 text-center text-base md:text-md space-y-4 lg:space-y-0 lg:space-x-5 lg:static lg:w-auto flex flex-col rounded-lg items-center lg:items-center lg:bg-transparent lg:border-0 lg:flex-row justify-between">
+          <div class="nav-item">
+          </div>
+          <li>
+            <a href="index.html"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">HOME
+            </a>
+          </li>
+          <li>
+            <a href="index.html#About"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">SOBRE NÓS</a>
+          </li>
+
+          <li>
+            <a href="index.html#meet"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">NOSSOS PETS
+            </a>
+
+          </li>
+          <li>
+            <a href="adopt.html"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item">APADRINHAMENTO
+            </a>
+          </li>
+          <li>
+            <a href="index.html#contact"
+              class="lg:p-1 text-custom-heading font-bold  underline-offset-4 turn-red-hover navbar-item remover">
+              CONTATOS
+              <button
+                class="flex inline-flex items-center bg-header-orange-light border-0 py-2 lg:py-2 text-choco text-base px-2 focus:outline-none text_4 font-bold rounded mt-4 md:mt-0 hover:bg-hover-choco hover:translate-x-2 transition-transform text-light-mode">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-4 h-4 ml-1 transform translate-x-0 transition-transform" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+<!--CARDS
+  <div class="card">
+    <div class="card-image"><img src="Assets/Images/dr.beto.webp" alt=""></div>
+    <div class="category"> Illustration </div>
+    <div class="heading"> A heading that must span over two lines
+        <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+    </div>
+</div>
+
+<div class="card">
+  <div class="card-image"><img src="Assets/Images/dr.beto.webp" alt=""></div>
+  <div class="category"> Illustration </div>
+  <div class="heading"> A heading that must span over two lines
+      <div class="author"> By <span class="name">Abi</span> 4 days ago</div>
+  </div>
+</div>
+
+-->
+<style>
+  .main-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+  }
+  
+  .container1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      width: 45%; /* Ajuste conforme necessário */
+      box-sizing: border-box;
+  }
+
+  h1 {
+      color: #333;
+      margin-bottom: 20px;
+  }
+
+  .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .step img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+  }
+
+  .step h2 {
+      color: #333;
+      margin-bottom: 10px;
+  }
+
+  .step p {
+      line-height: 1.5;
+      color: #555;
+  }
+
+  .step a {
+      color: #007bff;
+      text-decoration: none;
+  }
+
+  .step a:hover {
+      text-decoration: underline;
+  }
+
+  .footer {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+  }
+
+  .footer p {
+      margin: 0;
+      color: #777;
+  }
+</style>
+</head>
+
+<div class="main-container">
+  <div class="container1">
+      <h1>Quer fazer parte dessa corrente do bem e adotar? Entenda como funciona:</h1>
+      <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Ícone de Casa">
+          <h2>Ache seu pet</h2>
+          <p>Visite nosso clinica que possui espaço dedicado à adoção. Lá você irá conhecer os pets das ONGs/protetores parceiros para criar a conexão perfeita com cão e/ou gato que busca um novo lar. Nosso endereço   <a href="https://maps.app.goo.gl/85jDzx8gvvrHpDhF7">aqui</a>.</p>
+      </div>
+      
+      <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/263/263147.png" alt="Ícone de Verificação">
+          <h2>Avaliação da adoção</h2>
+          <p>Iremos realizar a análise do cadastro e perfil do adotante e pet escolhido. Preenchendo os requisitos, você recebe a aprovação na hora, quando a entrevista é realizada no local de atendimento pelo voluntário da clinica ou por telefone / e-mail. </p>
+      </div>
+
+      
+  </div>
+  
+  <div class="container1">
+    <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/3391/3391061.png" alt="Ícone de Formulário">
+          <h2>Redes Sociais</h2>
+          <p>Descubra dicas essenciais de cuidados pet e acompanhe histórias encantadoras. Siga-nos para ficar por dentro do universo pet na Clínica Veterinária Dr. Beto! <a href="https://www.instagram.com/vet_drbeto/">Redes sociais </a></p>
+      </div>
+      <h1>Apadrinhamento de Animais</h1>
+      <div class="step">
+          <img src="caminho/para/imagem-do-animal.jpg" alt="Imagem do QR CODE">
+          <h2>Ajude com o Apadrinhamento</h2>
+          <p>Você pode ajudar apadrinhando um animal. Sua contribuição é muito importante para nós!</p>
+          <p>Informações do PIX:</p>
+          <p><strong>Chave PIX:</strong> seu-pix@exemplo.com</p>
+          <p><strong>Banco:</strong> Nome do Banco</p>
+          <p><strong>Agência:</strong> 1234</p>
+          <p><strong>Conta:</strong> 56789-0</p>
+      </div>
+      
+      <div class="footer">
+        <p>*  Qualquer valor é valido para cuidar diariamente dos nossos pequeninos * </p>
+    </div>
+      
+  </div>
+</div>
+
+
+
+  <img src="Assets/cats-dogs-removebg.png" class="imagem-apd">
+
+  <div class="w-100 h-100 flex mt-10 ml-5 p-5">
+    <!-- About section -->
+    <div class="bg-[#f9f8d0] grid md:grid-cols-2 border-[#78350f] rounded-lg shadow-lg shadow-[#78350f] p-1">
+      <div class="flex justify-between gap-10 p-3 items-center flex-col">
+        <h1
+          class="mb-8 text-5xl tracking-tight underline-offset-4 turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
+          style="padding-top: 15px; padding-bottom: 25px">
+
+          APADRINHAMENTO
+        </h1>
+        <img
+          class="inline-block relative w-[250px] h-[250px] overflow-hidden border-[#78350f] rounded-full object-cover"
+          src="https://i.pinimg.com/736x/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg" alt="" />
+        <p id="description" class="font-semibold text-cyan-50 text-justify" style="color: #000000;">
+          Apadrinhe um pet e transforme uma vida com amor e cuidado.
+          Até que encontrem um lar permanente, aliviando abrigos e criando laços emocionais entre padrinhos e animais.
+        </p>
+
+      </div>
+      <form>
+        <img src="Assets/Images/QR CERTO.PNG" alt="" srcset="">
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=5511964095350" > LINK DO WHATSAPP</a>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Footer section  -->
+ 
+
+
+  <script>
+    const date = new Date();
+    const year = date.getFullYear();
+    document.getElementById("date").innerHTML = year;
+  </script>
+  <script>
+    // Add this JavaScript code to trigger the animation when meet cards come into view
+    window.addEventListener("scroll", function () {
+      const meetCards = document.querySelectorAll(".main-card");
+      const scrollPosition = window.scrollY + window.innerHeight;
+
+      meetCards.forEach((card) => {
+        const cardOffset = card.offsetTop;
+        if (scrollPosition > cardOffset) {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        }
+      });
+    });
+  </script>
+  <script>
+    // close the menu when a nav link is clicked
+    const menu_btn = document.querySelector('#nav-button')
+    const nav_links = document.querySelectorAll('nav ul li')
+
+    nav_links.forEach((link) => {
+      link.addEventListener('click', () => {
+        const currentWidth = window.innerWidth;
+        console.log(currentWidth);
+        if (currentWidth <= 1024) {
+          menu_btn.click();
+        }
+
+      })
+    })
+
+    // Add this JavaScript code to trigger the animation when About content comes into view
+    window.addEventListener("scroll", function () {
+      const aboutSection = document.querySelector("#about");
+      const aboutContent = aboutSection.querySelector(".fade-in");
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const contentOffset = aboutContent.offsetTop;
+
+
+      if (scrollPosition > contentOffset) {
+        aboutContent.style.opacity = "1";
+        aboutContent.style.transform = "translateY(0)";
+      }
+    });
+  </script>
+  <script src="index.js"></script>
+  <script src="navbar.js"></script>
+
+</body>
+
+</html>
