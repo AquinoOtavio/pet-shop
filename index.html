@@ -1,74 +1,73 @@
 <html lang="en" class="dark">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-  <link rel="stylesheet" href="./introSection.css" />
-  <link rel="stylesheet" href="./navbar.css" />
-  <link rel="stylesheet" href="mobileView.css">
-  <link rel="icon" type="image/x-icon" href="logo.png" />
-  <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <title>Centro Veterinário Dr.Beto</title>
-</head>
-
-<body>
-  <header class="header text-gray-400 bg-header-offwhite body-font flex flex-wrap items-center justify-between p-5 lg:p-10" id="header">
-    <div class="flex items-center" id="logo">
-      <a class="logo-border remover" href="index.html">
-        <img class="rounded-full w-20 h-20" src="./Assets/Images/logo1.png" alt="logo" />
-      </a>
-    </div>
-    <nav class="lg:flex lg:items-center lg:w-auto">
-      <div class="lg:flex hidden" id="navbar">
-        <ul class="flex flex-col lg:flex-row lg:space-x-5 items-center">
-          <li>
-            <a href="index.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">HOME</a>
-          </li>
-          <li>
-            <a href="#About" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">SOBRE NÓS</a>
-          </li>
-          <li>
-            <a href="#meet" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">NOSSOS PETS</a>
-          </li>
-          <li>
-            <a href="adopt.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">APADRINHAMENTO</a>
-          </li>
-          <li>
-            <a href="#contact" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item remover">
-              CONTATOS
-            </a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="./introSection.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="mobileView.css">
+    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Centro Veterinário Dr.Beto</title>
+  </head>
+  <body>
+    <header class="header text-gray-400 bg-header-offwhite body-font flex flex-wrap items-center justify-between p-5 lg:p-10" id="header">
+      <div class="flex items-center" id="logo">
+        <a class="logo-border remover" href="index.html">
+          <img class="rounded-full w-20 h-20" src="./Assets/Images/logo1.png" alt="logo" />
+        </a>
       </div>
-      <button class="lg:hidden block text-2xl" onclick="toggleMenu()">
-        <i class="ri-menu-line"></i>
-      </button>
-    </nav>
-  </header>
-  <div id="mobile-menu" class="hidden lg:hidden">
-    <ul class="flex flex-col space-y-2 p-5 bg-header-offwhite">
-      <li>
-        <a href="index.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">HOME</a>
-      </li>
-      <li>
-        <a href="#About" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">SOBRE NÓS</a>
-      </li>
-      <li>
-        <a href="#meet" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">NOSSOS PETS</a>
-      </li>
-      <li>
-        <a href="adopt.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">APADRINHAMENTO</a>
-      </li>
-      <li>
-        <a href="#contact" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item remover">CONTATOS</a>
-      </li>
-    </ul>
-  </div>
+      <nav class="lg:flex lg:items-center lg:w-auto">
+        <div class="lg:flex hidden" id="navbar">
+          <ul class="flex flex-col lg:flex-row lg:space-x-5 items-center">
+            <li>
+              <a href="index.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">HOME</a>
+            </li>
+            <li>
+              <a href="#About" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">SOBRE NÓS</a>
+            </li>
+            <li>
+              <a href="#meet" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">NOSSOS PETS</a>
+            </li>
+            <li>
+              <a href="adopt.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">APADRINHAMENTO</a>
+            </li>
+            <li>
+              <a href="#contact" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item remover">
+                CONTATOS
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button class="lg:hidden block text-2xl" onclick="toggleMenu()">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+    <div id="mobile-menu" class="hidden lg:hidden">
+      <ul class="flex flex-col space-y-2 p-5 bg-header-offwhite">
+        <li>
+          <a href="index.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">HOME</a>
+        </li>
+        <li>
+          <a href="#About" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">SOBRE NÓS</a>
+        </li>
+        <li>
+          <a href="#meet" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">NOSSOS PETS</a>
+        </li>
+        <li>
+          <a href="adopt.html" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item">APADRINHAMENTO</a>
+        </li>
+        <li>
+          <a href="#contact" class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item remover">CONTATOS</a>
+        </li>
+      </ul>
+    </div>
+  
   <section class="main-body-section">
     <div class="main-body-section-div relative">
       <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-43"></div>
@@ -717,6 +716,17 @@
         aboutContent.style.transform = "translateY(0)";
       }
     });
+
+    // MENU //
+
+    function toggleMenu() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    }
   </script>
   <script src="index.js"></script>
   <script src="navbar.js"></script>
