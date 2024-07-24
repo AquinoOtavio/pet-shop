@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" class="dark">
 
 <head>
@@ -91,6 +92,25 @@
         width: 45%;
       }
     }
+
+    .apadrinhamento-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .top-image {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    .qr-code {
+      margin-left: auto;
+    }
   </style>
 </head>
 
@@ -174,7 +194,7 @@
         <h2>Avaliação da adoção</h2>
         <p>Iremos realizar a análise do cadastro e perfil do adotante e pet escolhido. Preenchendo os requisitos, você
           recebe a aprovação na hora, quando a entrevista é realizada no local de atendimento pelo voluntário do centro
-          veterinário ou por telefone / e-mail. </p>
+          veterinário ou por telefone / e-mail.</p>
       </div>
     </div>
     <div class="container1">
@@ -182,8 +202,8 @@
         <img src="https://cdn-icons-png.flaticon.com/512/3391/3391061.png" alt="Ícone de Formulário">
         <h2>Redes Sociais</h2>
         <p>Descubra dicas essenciais de cuidados pet e acompanhe histórias encantadoras. Siga-nos para ficar por dentro
-          do universo pet no Centro Veterinário Dr. Beto! <a href="https://www.instagram.com/vet_drbeto/">Redes sociais
-          </a></p>
+          do universo pet no Centro Veterinário Dr. Beto! <a href="https://www.instagram.com/vet_drbeto/">Redes
+            sociais</a></p>
       </div>
       <h1>Apadrinhamento de Animais</h1>
       <div class="step">
@@ -197,16 +217,17 @@
         <p><strong>Conta:</strong> 56789-0</p>
       </div>
       <div class="footer">
-        <p>* Qualquer valor é valido para cuidar diariamente dos nossos pequeninos * </p>
+        <p>* Qualquer valor é válido para cuidar diariamente dos nossos pequeninos * </p>
       </div>
     </div>
   </div>
 
-  <img src="Assets/cats-dogs-removebg.png" class="imagem-apd">
-
   <div class="w-full h-full flex mt-10 p-5">
     <!-- About section -->
-    <div class="bg-[#f9f8d0] grid md:grid-cols-2 border-[#78350f] rounded-lg shadow-lg shadow-[#78350f] p-1">
+    <div
+      class="bg-[#f9f8d0] grid md:grid-cols-2 border-[#78350f] rounded-lg shadow-lg shadow-[#78350f] p-1 apadrinhamento-container">
+      <!-- Imagem fixa no topo da div -->
+
       <div class="flex justify-between gap-10 p-3 items-center flex-col">
         <h1
           class="mb-5 text-5xl tracking-tight underline-offset-4 turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
@@ -222,8 +243,7 @@
         </p>
       </div>
       <form>
-        <img src="Assets/Images/QR CERTO.PNG" alt="" srcset="" class="img-code">
-
+        <img src="Assets/Images/QR CERTO.PNG" alt="" class="qr-code">
       </form>
     </div>
   </div>
