@@ -22,6 +22,7 @@ body {
   line-height: 1.4;
   color: var(--color-black);
   margin: 0;
+  padding: 0; /* Garantir que não há preenchimento indesejado */
   background: var(--color-cyan);
   background-image: linear-gradient(
     115deg,
@@ -45,18 +46,15 @@ p {
   margin: 0 0 0.5rem;
 }
 
-/* Container */
-.container {
-  padding: 1rem;
-  margin: 0 auto;
-}
-
 /* Adicione esta classe para a div que contém as imagens */
 .apadrinhamento-container {
   display: flex;
   align-items: flex-start; /* Alinha a imagem no topo */
   justify-content: space-between; /* Espaça os elementos para as extremidades */
   position: relative; /* Necessário para o posicionamento absoluto */
+  width: 100%; /* Garante que a div ocupe a largura total disponível */
+  padding: 1rem; /* Adiciona um pouco de preenchimento interno */
+  margin: 0; /* Remove qualquer margem externa */
 }
 
 /* Adicione estas regras para a imagem fixa no topo */
