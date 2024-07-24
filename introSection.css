@@ -105,6 +105,8 @@
   border-radius: 15px;
   overflow: hidden;
   transition: all 300ms;
+  margin-left: 5%;
+
 
 }
 
@@ -134,16 +136,17 @@
 }
 
 .card-img-div {
-  border-radius: 500px;
+  border-radius: 100px;
 }
 
 .card-img-a {
   background-color: rgb(255, 231, 202);
-  color: rgb(255, 231, 202);
+
 }
 
 .card-height {
   height: 370px;
+  
 }
 
 .card-img-size {
@@ -151,6 +154,7 @@
   height: 330px;
   object-fit: cover;
   object-position: 25% 75%;;
+
 }
 
 ::-webkit-scrollbar {
