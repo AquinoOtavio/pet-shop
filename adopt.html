@@ -16,109 +16,66 @@
   <script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
   <title>Apadrinhamento</title>
-  <style>
-    /* Adicionando estilo básico */
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
+ <style>
 
-    .container1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
-    }
 
-    .step {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      background-color: #12934b;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+    /*CARDS */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    .card-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 10px; /* Ajustou o espaço entre os cards */
+            background-color: #f7f7f7;
+        }
 
-    .step img {
-      width: 100px;
-      height: 100px;
-      margin-bottom: 10px;
-    }
+        .card {
+            background-color: #dddddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-    .step h2 {
-      color: #000000;
-      margin-bottom: 10px;
-    }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
-    .step p {
-      line-height: 1.5;
-      color: #000000;
-    }
+        .icon {
+            font-size: 50px;
+            color: #50c7c7;
+            margin-bottom: 20px;
+        }
 
-    .step a {
-      color: #fff;
-      text-decoration: none;
-    }
+        h3 {
+            font-size: 40%;
+            color: #000000;
+            margin-bottom: 15px;
+        }
 
-    .step a:hover {
-      text-decoration: underline;
-    }
+        p {
+            font-size: 16px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
 
-    .footer {
-      background-color: #6d6d6d;
-      padding: 10px;
-      text-align: center;
-    }
+        }
 
-    .footer p {
-      margin: 0;
-      color: #ffffff;
-    }
+        .p {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 20px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
 
-    /* Adicionando estilo para a seção de apadrinhamento */
-    .apadrinhamento-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      width: 100%;
-      box-sizing: border-box;
-      background: #f9f8d0;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
+        }
 
-    .apadrinhamento-container .top-image {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-      width: 100%;
-      max-width: 100%;
-    }
-
-    .qr-code {
-      margin-left: auto;
-    }
-
-    @media (max-width: 768px) {
-      .apadrinhamento-container {
-        padding: 10px;
-      }
-
-      .apadrinhamento-container .top-image {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 
@@ -185,84 +142,161 @@
           class="p-2 text-custom-heading font-bold underline-offset-4 turn-red-hover navbar-item remover">CONTATOS</a>
       </li>
     </ul>
-  </div>
+  </div> 
+  <div class="card-container">
+    <div class="card">
+        <div class="icon">&#128062;</div>
+        <h3>Consultas de Rotina</h3>
+        <p class="p">Realizamos consultas de rotina para garantir a saúde contínua do seu pet, com acompanhamento personalizado e recomendações de cuidados preventivos.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#128138;</div>
+        <h3>Vacinação</h3>
+        <p class="p">Oferecemos um programa completo de vacinação para proteger seu pet contra as principais doenças, seguindo o calendário recomendado.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#128137;</div>
+        <h3>Cirurgias</h3>
+        <p class="p">Realizamos cirurgias diversas com todo o cuidado e segurança, utilizando técnicas avançadas e materiais de alta qualidade.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#128137;</div>
+        <h3>Exames Laboratoriais</h3>
+        <p class="p">Dispomos de laboratório completo para a realização de exames laboratoriais, permitindo um diagnóstico rápido e preciso das condições de saúde do seu pet.</p>
+    </div>
+</div>
+<div class="card-container">
+    <div class="card">
+        <div class="icon">&#128055;</div>
+        <h3>Odontologia Veterinária</h3>
+        <p class="p">Cuide da saúde bucal do seu pet com nossos serviços de odontologia veterinária, incluindo limpezas, extrações e tratamentos especializados.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#128572;</div>
+        <h3>Dermatologia</h3>
+        <p class="p">Tratamos problemas de pele com diagnósticos precisos e tratamentos eficazes, garantindo o bem-estar e conforto do seu pet.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#127828;</div>
+        <h3>Nutrição</h3>
+        <p class="p">Oferecemos consultas de nutrição para orientar sobre a melhor alimentação e suplementação, promovendo uma vida saudável para seu pet.</p>
+    </div>
+    <div class="card">
+        <div class="icon">&#128568;</div>
+        <h3>Emergências</h3>
+        <p class="p">Estamos preparados para atender emergências veterinárias, oferecendo cuidados imediatos e suporte intensivo quando seu pet mais precisa.</p>
+    </div>
+</div>
 
-  <div class="main-container">
-    <div class="container1">
-      <h1>Quer fazer parte dessa corrente do bem e adotar? Entenda como funciona:</h1>
-      <div class="step">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Ícone de Casa">
-        <h2>Ache seu pet</h2>
-        <p>Visite nosso centro que possui espaço dedicado à adoção. Lá você irá conhecer os pets das ONGs/protetores
-          parceiros para criar a conexão perfeita com cão e/ou gato que busca um novo lar. Nosso endereço <a
-            href="https://maps.app.goo.gl/85jDzx8gvvrHpDhF7">aqui</a>.</p>
+
+
+  <!-- Footer section  -->
+  <footer class="bg-black text-white shadow-inner pt-4 pb-8 ">
+    <div class="px-3 md:px-5">
+      <div class="flex flex-col md:flex-row md:justify-between">
+  
+        <!-- Logo e Desenvolvedor -->
+        <div class="flex items-center md:mb-0 mb-4">
+          <a href="https://br.linkedin.com/in/otavio-de-aquino-santos-a852a2246" class="flex items-center">
+            <p class="w-32 mr-2">Desenvolvedor:</p>
+            <p>Otavio Aquino</p>
+          </a>
+        </div>
+  
+        <!-- Mapa -->
+        <div class="mb-4 md:mb-0 " style="width: 250px; height: 200px; margin-left: 10%;">
+          <iframe class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.757679358953!2d-46.551126!3d-23.708464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58b38d1b6cc1%3A0xf75e6b5c28e51889!2sRua%20Eug%C3%AAnia%20Sa%20Vitale%2C%201345%20-%20Paulic%C3%A9ia%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009665-000%2C%20Brazil!5e0!3m2!1sen!2sus!4v1626557748121!5m2!1sen!2sus">
+          </iframe>
+        </div>
+  
+        <!-- Redes Sociais -->
+        <div class="flex items-center justify-center mb-4 md:mb-0">
+          <div class="font-medium mr-2">Redes Sociais</div>
+          <div class="flex space-x-3 ">
+            <a href="https://www.instagram.com/vet_drbeto/" class="hover:scale-110 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"
+                class="fill-current text-white">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Scroll to top -->
+        <div class="hover-effect">
+          <a href="#top">
+            <button id="bttbutton" title="backtotop">
+              <img src="Assets/Images/image.svg" class="w-6 md:w-10" />
+            </button>
+          </a>
+        </div>
+        <!-- Scroll to top end -->
+  
       </div>
-      <div class="step">
-        <img src="https://cdn-icons-png.flaticon.com/512/263/263147.png" alt="Ícone de Verificação">
-        <h2>Avaliação da adoção</h2>
-        <p>Iremos realizar a análise do cadastro e perfil do adotante e pet escolhido. Preenchendo os requisitos, você
-          recebe a aprovação na hora, quando a entrevista é realizada no local de atendimento pelo voluntário do centro
-          veterinário ou por telefone / e-mail.</p>
+  
+      <!-- Direitos Autorais -->
+      <div>
+        <p>Copyright &copy; <span id="date"></span> Centro Veterinário Dr Beto </p>
+        <p>Todos Os Direitos Reservados</p>
       </div>
     </div>
-    <div class="container1">
-      <div class="step">
-        <img src="https://cdn-icons-png.flaticon.com/512/3391/3391061.png" alt="Ícone de Formulário">
-        <h2>Redes Sociais</h2>
-        <p>Descubra dicas essenciais de cuidados pet e acompanhe histórias encantadoras. Siga-nos para ficar por dentro
-          do universo pet no Centro Veterinário Dr. Beto! <a href="https://www.instagram.com/vet_drbeto/">Redes
-            sociais</a></p>
-      </div>
-      <h1>Apadrinhamento de Animais</h1>
-      <div class="step">
-        <img src="caminho/para/imagem-do-animal.jpg" alt="Imagem do QR CODE">
-        <h2>Ajude com o Apadrinhamento</h2>
-        <p>Você pode ajudar apadrinhando um animal. Sua contribuição é muito importante para nós!</p>
-        <p>Informações do PIX:</p>
-        <p><strong>Chave PIX:</strong> seu-pix@exemplo.com</p>
-        <p><strong>Banco:</strong> Nome do Banco</p>
-        <p><strong>Agência:</strong> 1234</p>
-        <p><strong>Conta:</strong> 56789-0</p>
-      </div>
-      <div class="footer">
-        <p>* Qualquer valor é válido para cuidar diariamente dos nossos pequeninos * </p>
-      </div>
-    </div>
-  </div>
+  </footer>
+  
 
-  <div class="w-full h-full flex mt-10 p-5">
-    <!-- About section -->
-    <div
-      class="bg-[#f9f8d0] grid md:grid-cols-2 border-[#78350f] rounded-lg shadow-lg shadow-[#78350f] p-1 apadrinhamento-container">
-      <!-- Imagem fixa no topo da div -->
-      <img
-        class="top-image"
-        src="https://i.pinimg.com/736x/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg" alt="" />
-
-      <div class="flex justify-between gap-10 p-3 items-center flex-col">
-        <h1
-          class="mb-5 text-5xl tracking-tight underline-offset-4 turn-yellow-hover antialiased font-extrabold text-center text-gray-900 dark:text-white text_3"
-          style="padding-top: 10px; padding-bottom: 25px">
-          APADRINHAMENTO
-        </h1>
-        <img
-          class="inline-block relative w-[250px] h-[250px] overflow-hidden border-[#78350f] rounded-full object-cover"
-          src="https://i.pinimg.com/736x/44/d9/8c/44d98cccb725fd3a80c0446b9b2e646d.jpg" alt="" />
-        <p id="description" class="font-semibold text-cyan-50 text-justify" style="color: #000000;">
-          Apadrinhe um pet e transforme uma vida com amor e cuidado. Até que encontrem um lar permanente, aliviando
-          abrigos e criando laços emocionais entre padrinhos e animais.
-        </p>
-      </div>
-      <form>
-        <img src="Assets/Images/QR CERTO.PNG" alt="" class="qr-code">
-      </form>
-    </div>
-  </div>
 
   <script>
     const date = new Date();
     const year = date.getFullYear();
     document.getElementById("date").innerHTML = year;
+  </script>
+  <script>
+    // Add this JavaScript code to trigger the animation when meet cards come into view
+    window.addEventListener("scroll", function () {
+      const meetCards = document.querySelectorAll(".main-card");
+      const scrollPosition = window.scrollY + window.innerHeight;
+
+      meetCards.forEach((card) => {
+        const cardOffset = card.offsetTop;
+        if (scrollPosition > cardOffset) {
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        }
+      });
+    });
+  </script>
+  <script>
+    // close the menu when a nav link is clicked
+    const menu_btn = document.querySelector('#nav-button')
+    const nav_links = document.querySelectorAll('nav ul li')
+
+    nav_links.forEach((link) => {
+      link.addEventListener('click', () => {
+        const currentWidth = window.innerWidth;
+        console.log(currentWidth);
+        if (currentWidth <= 1024) {
+          menu_btn.click();
+        }
+
+      })
+    })
+
+    // Add this JavaScript code to trigger the animation when About content comes into view
+    window.addEventListener("scroll", function () {
+      const aboutSection = document.querySelector("#about");
+      const aboutContent = aboutSection.querySelector(".fade-in");
+      const scrollPosition = window.scrollY + window.innerHeight;
+      const contentOffset = aboutContent.offsetTop;
+
+
+      if (scrollPosition > contentOffset) {
+        aboutContent.style.opacity = "1";
+        aboutContent.style.transform = "translateY(0)";
+      }
+    });
+
+    // MENU //
 
     function toggleMenu() {
       const mobileMenu = document.getElementById('mobile-menu');
@@ -273,9 +307,9 @@
       }
     }
   </script>
-
   <script src="index.js"></script>
   <script src="navbar.js"></script>
+
 </body>
 
 </html>
